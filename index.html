@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br"  class="theme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Jogos</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+<body>
+  <div class="is-flex is-justify-content-center">
+  <header style="margin-top: 1rem">
+    <h1 class="title is-1">Cadastro de Jogos</h1>
+  </header>
+  </div>
+
+  <article class="message">
+    <div class="message-body" style="margin-left: 10rem; margin-right: 10rem; margin-top: 3rem">
+      <strong>Olá Gamer!</strong>
+      <br>Bem Vindo(a) ao Cadastro de Jogos!
+      <br>Nesse pequeno site você irá registrar todos os jogos que já jogou, está jogando ou tem vontade
+       de jogar. 
+       <br>Além disso, você pode registrar os jogos on-line, já que eles não tem fim e é uma 
+       ótima opção para jogar com os amigos!
+       <br>Algumas regrinhas que você precisa saber antes de cadastrar um jogo:
+       <br>1- Colocar o nome do jogo como você preferir;
+       <br>2- No status do jogo é como você abandonou o jogo, se for um jogo que tenha save ou mesmo um on-line. 
+      Completo (se você já terminou todo o jogo), Incompleto (se ainda não terminou), On-line (se o jogo precisa de internet para rodar), 
+      Quero jogar (se deseja jogar o jogo algum dia, mesmo que esse dia esteja longe);
+      <br>3- O gênero do jogo seria MOBA, FPS, RPG e por aí vai;
+      <br>4- Nos botões você poderá excluir ou editar algum dos jogos adicionados.
+      <br>Agora é com você!
+    </div>
+  </article>
+  <main>
+    <div class="container">
+      <div class="is-flex is-justify-content-center" style="margin-top: 3rem">
+        <button type="button" class="button is-primary is-success is-outlined" id="openModalButton">Cadastrar Jogo</button>
+      </div>
+    </div>    
+    <div class="is-flex is-justify-content-center">
+      <table class="table" id="tableGame" style="margin-top: 1rem">
+        <thead>
+          <tr>
+            <th>Nome do Jogo</th>
+            <th>Status do Jogo</th>
+            <th>Gênero do Jogo</th>
+            <th class="has-text-centered">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Cadastrar Novo Jogo</p>
+            <button id="closeModalButton" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <form id="form" class="modal-form">
+              <label for="name">Nome do jogo</label>
+                <input id="name" class="modal-field input is-rounded" data-index="new" type="text" placeholder="Nome do Jogo" style="margin-bottom: 1rem" required>
+                <label for="gameTime">Status do jogo</label>
+                  <select id="gameTime" class="modal-field input is-rounded" type="text" placeholder="Status do Jogo" style="margin-bottom: 1rem" required>
+                    <option value="Zerado">Completo</option>
+                    <option value="Incompleto">Incompleto</option>
+				            <option value="OnLine">On-line</option>
+				            <option value="Quero Jogar">Quero jogar</option>
+                  </select>
+                <label for="gender">Gênero do jogo</label>
+                  <input id="gender" class="modal-field input is-rounded" type="text" placeholder="Gênero do Jogo" required>
+            </form>
+          </section>
+    
+          <footer class="modal-card-foot">
+            <div class="buttons">
+              <button id="saveItemButton" class="button is-success">Salvar</button>
+              <button id="cancelItemButton" class="button">Cancelar</button>
+            </div>         
+          </footer>
+        </div>
+      </div>
+  </main>
+<footer></footer>
+</body>
+</html>
