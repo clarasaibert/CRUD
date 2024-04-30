@@ -6,7 +6,8 @@ Um site para cadastrar jogos que o usuário já jogou, pretende jogar, não term
 
 ## Funcionalidades do projeto
 
--`Funcionalidade 1`: esse projeto serve para você armazenar todos os jogos que conhece, podendo listá-los de maneira interativa; -`Funcionalidade 2`: além de adicionar os jogos, você pode modificá-los ou excluí-los quando quiser.
+- `Funcionalidade 1`: esse projeto serve para você armazenar todos os jogos que conhece, podendo listá-los de maneira interativa;
+- `Funcionalidade 2`: além de adicionar os jogos, você pode modificá-los ou excluí-los quando quiser.
 
 ## Tecnologias utilizadas
 
